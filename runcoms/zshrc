@@ -14,5 +14,12 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Source set of LS_COLORS from https://github.com/trapd00r/LS_COLORS
 source ~/lscolors.sh
+
+# ZSH uses LS_COLORS above for tab-complete
 zstyle ':completion:*' list-colors
+
+# WSL ONLY: Use VPNKit for wireguard compatability
+wsl.exe -d wsl-vpnkit service wsl-vpnkit start
