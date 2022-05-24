@@ -19,7 +19,7 @@ fi
 source ~/lscolors.sh
 
 # ZSH uses LS_COLORS above for tab-complete
-zstyle ':completion:*' list-colors
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # WSL ONLY: Use VPNKit for wireguard compatability
 wsl.exe -d wsl-vpnkit service wsl-vpnkit start
