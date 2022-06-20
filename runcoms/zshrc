@@ -22,4 +22,4 @@ source ~/lscolors.sh
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # WSL ONLY: Use VPNKit for wireguard compatability
-wsl.exe -d wsl-vpnkit service wsl-vpnkit start
+# wsl.exe -d wsl-vpnkit service wsl-vpnkit start
